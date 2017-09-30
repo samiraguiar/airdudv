@@ -1,0 +1,49 @@
+<div class="info" ng-show="abastecimentoInfoCtrl.model.exibir" style="color: #000; background-color: white; border: 1px solid #00C1EB; padding: 6px">
+    <div class="row">
+        <div class="col-xs-6">
+            <b>Capacidade atual</b>
+        </div>
+        <div class="col-xs-6 text-right">
+            {{ abastecimentoInfoCtrl.model.capacidadeAtual }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <b>Capacidade total</b>
+        </div>
+        <div class="col-xs-6 text-right">
+            {{ abastecimentoInfoCtrl.model.capacidadeTotal }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <b>Status</b>
+        </div>
+        <div class="col-xs-6 text-right">
+            {{ abastecimentoInfoCtrl.model.status ? 'Aberto' : 'Fechado' }}
+        </div>
+    </div>
+
+    <div class="row" ng-show="!abastecimentoInfoCtrl.model.status">
+        <div class="col-xs-12">
+            <div class="pull-right">
+                <button type="button" class="btn btn-block btn-info" ng-click="abastecimentoInfoCtrl.abrir()">
+                    Abrir
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" ng-show="abastecimentoInfoCtrl.model.status">
+        <div class="col-xs-12">
+            <div class="pull-right">
+                <button type="button" class="btn btn-block btn-info" ng-click="abastecimentoInfoCtrl.fechar()">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

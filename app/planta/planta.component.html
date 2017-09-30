@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-sm-12 col-md-4">
+        <div class="small-box bg-green">
+            <div class="inner">
+                <h4>Cacto</h4>
+                <p><b>Normal</b></p>
+            </div>
+            <div class="icon">
+                <i class="glyphicon glyphicon-tree-deciduous"></i>
+            </div>
+            <a href="#" class="small-box-footer" ng-click="plantaCtrl.alternarInformacao(0)">
+                Ver mais <i class="fa fa-plus-circle"></i>
+            </a>
+            <planta-info-component model="plantaCtrl.informacoes[0]"></planta-info-component>
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+        <div class="small-box bg-yellow-active">
+            <div class="inner">
+                <h4>Samambaia</h4>
+                <p><b>Seca</b></p>
+            </div>
+            <div class="icon">
+                <i style="font-size: inherit">
+                    <img style="height: 1em; width: auto; opacity: 0.3; vertical-align: text-top;" src="./images/icons/cactus.svg" alt="Cacto">
+                </i>
+            </div>
+            <a href="#" class="small-box-footer" ng-click="plantaCtrl.alternarInformacao(1)">
+                Ver mais <i class="fa fa-plus-circle"></i>
+            </a>
+            <planta-info-component ng-if="plantaCtrl.informacoes" model="plantaCtrl.informacoes[1]"></planta-info-component>
+        </div>
+    </div>
+</div>

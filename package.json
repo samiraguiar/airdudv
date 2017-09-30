@@ -1,0 +1,39 @@
+{
+  "name": "demo-pwa",
+  "description": "Demo progressive web application",
+  "version": "1.0.0",
+  "author": "gokulkrishh",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.3",
+    "admin-lte": "^2.4.0",
+    "angular": "^1.6.6",
+    "angular-css": "^1.0.8",
+    "bootstrap": "^3.3.7",
+    "express": "^4.13.4",
+    "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "mqtt": "^2.13.0",
+    "promise": "^8.0.1",
+    "uuid": "^3.1.0"
+  },
+  "scripts": {
+    "start": "npm run css && node server.js",
+    "start:dev": "webpack-dev-server",
+    "css": "postcss -u autoprefixer -r css/*"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "postcss-cli": "^2.6.0",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "engines": {
+    "node": "4.1.1"
+  },
+  "license": "MIT"
+}

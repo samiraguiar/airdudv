@@ -1,0 +1,58 @@
+<div class="row">
+    <div class="col-sm-12 col-md-4">
+        <div class="info-box">
+            <span class="info-box-icon bg-navy"><i class="fa fa-calendar"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Data/Hora</span>
+                <span class="info-box-number">{{ dashboardCtrl.obterData() }}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+        <div class="info-box">
+            <span class="info-box-icon bg-red"><i class="fa fa-thermometer-empty"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Temperatura</span>
+                <span class="info-box-number">{{ dashboardCtrl.informacoes.temperatura }}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+        <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="fa fa-tint"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">Umidade</span>
+                <span class="info-box-number">{{ dashboardCtrl.informacoes.umidade }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+        <div class="col-sm-12 col-md-4">
+            <div class="info-box">
+                <span class="info-box-icon bg-yellow"><i class="fa fa-sun-o"></i></span>
+
+                <div class="info-box-content">
+                    <span class="info-box-text">Luminosidade</span>
+                    <span class="info-box-number">{{ dashboardCtrl.informacoes.luminosidade }}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+            <div class="info-box">
+                <span class="info-box-icon bg-green"><i class="fa fa-heartbeat"></i></span>
+
+                <div class="info-box-content">
+                    <span class="info-box-text">Status Sistema</span>
+                    <span class="info-box-number">{{ dashboardCtrl.informacoes.statusSistema }}</span>
+                </div>
+            </div>
+        </div>
+    </div>

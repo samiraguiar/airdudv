@@ -1,0 +1,38 @@
+<div class="info" ng-show="plantaInfoCtrl.model.exibir" ng-style="plantaInfoCtrl.obterEstiloBorda()" style="color: #000; background-color: white; border-width: 1px; border-style: solid; padding: 6px">
+    <div class="row">
+        <div class="col-xs-6">
+            <b>Umidade</b>
+        </div>
+        <div class="col-xs-6 text-right">
+            {{ plantaInfoCtrl.model.umidade }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <b>Luminosidade</b>
+        </div>
+        <div class="col-xs-6 text-right">
+            {{ plantaInfoCtrl.model.luminosidade }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <b>Temperatura</b>
+        </div>
+        <div class="col-xs-6 text-right">
+            {{ plantaInfoCtrl.model.temperatura }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="pull-right">
+                <button type="button" class="btn btn-block btn-info" ng-click="plantaInfoCtrl.aguarPlanta()">
+                    Aguar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
